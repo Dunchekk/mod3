@@ -758,6 +758,25 @@ function changeTime() {
     var UTSsec = date.getUTCSeconds();
     var UTSmilisec = date.getUTCMilliseconds();
 
+	if (minutes < 10) {
+		minutes = '0'+ minutes
+	}
+	if (hours < 10) {
+		hours = '0'+ hours
+	}
+	if (sec < 10) {
+		sec = '0'+ sec
+	}
+	if (UTShours < 10) {
+		UTShours = '0'+ UTShours
+	}
+	if (UTSsec < 10) {
+		UTSsec = '0'+ UTSsec
+	}
+	if (UTSminutes < 10) {
+		UTSminutes = '0'+ UTSminutes
+	}
+
     document.getElementById('run_tech1').innerHTML = getDayName(day) + ", " + dateNum + " " + getMounthyName(mounth) + ", " + year;
     document.getElementById('run_tech2').innerHTML = hours + ":" + minutes + ":" + sec + " ." + milisec;
     document.getElementById('run_tech3').innerHTML = UTShours + ":" + UTSminutes + ":" + UTSsec + " ." + UTSmilisec;
