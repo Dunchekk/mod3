@@ -1,4 +1,5 @@
 @import url(adaptive.css);
+@import url(reset.css);
 @font-face {
     font-family: 'IBMPlexMono';
     src: url(./IBMPlexMono-Regular.ttf);
