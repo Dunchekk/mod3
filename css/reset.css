@@ -1,0 +1,19 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+	vertical-align: top;
+}
+
+label {
+    user-select: none;
+}
+
+body {
+	line-height: 1;
+}
